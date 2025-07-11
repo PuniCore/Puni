@@ -1,0 +1,68 @@
+{
+  "name": "@punicore/puni",
+  "version": "1.0.0",
+  "description": "一个高效·稳定·可高度灵活扩展 的机器人框架",
+  "keywords": [
+    "node",
+    "nodejs",
+    "bot",
+    "puni"
+  ],
+  "bugs": {
+    "url": "https://github.com/PuniCore/Puni/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PuniCore/Puni.git"
+  },
+  "license": "GNU AGPL-3.0",
+  "author": "PuniCore",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --noEmit && tsdown",
+    "dev": "tsx src/index.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "sort": "sort-package-json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@candriajs/exec": "^1.0.7",
+    "@punicore/logger": "^1.2.1",
+    "axios": "npm:@candriajs/axios@^1.1.2",
+    "chokidar": "^4.0.3",
+    "dayjs": "^1.11.13",
+    "dotenv": "npm:@candriajs/dotenv@^1.2.2",
+    "log4js": "^6.9.1",
+    "radash": "^12.1.1",
+    "redis": "npm:ioredis@^5.6.1",
+    "simple-git": "npm:@candriajs/simple-git@^1.1.2",
+    "yaml": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.16.3",
+    "@typescript-eslint/eslint-plugin": "^8.36.0",
+    "@typescript-eslint/parser": "^8.36.0",
+    "eslint": "^9.30.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.3.0",
+    "neostandard": "^0.12.2",
+    "tsc-alias": "^1.8.16",
+    "tsdown": "^0.12.9",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.36.0"
+  },
+  "packageManager": "pnpm@10.12.4",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "unrs-resolver"
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+import e from"node:path";import{fileURLToPath as t}from"node:url";const n=t(import.meta.url),r=Object.freeze(e.join(n,`../..`).replace(/\\/g,`/`)),i=Object.freeze(e.join(process.cwd(),`@puni`).replace(/\\/g,`/`)),a=Object.freeze(e.join(i,`logs`));export{i as puniPathBase,a as puniPathLogs,r as puniPathRoot};
